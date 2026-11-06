@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>属于我们的手册</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img class="bg" src="Other/background-image.jpg" alt="">
+<audio id="music" src="Other/James TW - Speechless (Official Video).mp3" loop preload="auto"></audio>
+<button class="music-btn" id="musicBtn" aria-label="播放或暂停音乐">♫</button>
+
+<div class="scene">
+  <div class="book" id="book" tabindex="0" aria-label="属于我们的手册">
+    <div class="back"></div>
+    <div class="pages"></div>
+
+    <!-- 第五页（右）：礼物页 -->
+    <div class="end-page pg" id="giftPage">
+      <h2 class="hand">这是你的礼物</h2>
+      <div class="orn"></div>
+      <div class="gift-box" id="giftBox">
+        <img class="gift-img" src="Other/ladydior.png" alt="礼物" onerror="this.style.display='none'">
+        <div class="wrap" id="wrap" aria-label="礼物包装，按住并拖开">
+          <span class="bow"><i></i><i></i><b></b></span>
+        </div>
+      </div>
+      <p class="gift-cap">
+        <span class="before">按住包装纸，往任意方向拖开 ↔</span>
+        <span class="after">拆开啦！这是你的礼物 ❤️</span>
+      </p>
+      <span class="pno">5</span>
+    </div>
+
+    <!-- 封面 + 第 0 页（左：写给你） -->
+    <div class="leaf" style="--i:0">
+      <div class="face fr cover-front" data-go="next">
+        <div class="hinge"></div>
+        <svg class="deco" viewBox="0 0 300 420" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3dc9c"/><stop offset=".5" stop-color="#c9a24f"/><stop offset="1" stop-color="#ecd08a"/></linearGradient>
+    <linearGradient id="mt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0c6c0"/><stop offset="1" stop-color="#c98588"/></linearGradient>
+    <linearGradient id="mt2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a3040"/><stop offset="1" stop-color="#5a1a28"/></linearGradient>
+    <symbol id="hh" viewBox="-10 -4 20 20"><path d="M0 3C-3-3-9 0-9 4C-9 9-2 12 0 15C2 12 9 9 9 4C9 0 3-3 0 3Z"/></symbol>
+  </defs>
+  <g stroke="url(#gold)" fill="none" stroke-width=".8" stroke-linecap="round">
+    <path d="M280 10V410" opacity=".9"/>
+    <path d="M24 0V420M28.5 0V420" opacity=".45" stroke-width=".5"/>
+    <path d="M0 394H28" opacity=".7"/>
+    <path d="M128 80C160 74 182 60 198 46"/><path d="M228 38C250 34 266 36 280 30"/>
+    <path d="M28 392C62 398 96 382 112 368"/><path d="M128 366C170 350 212 352 252 362"/>
+  </g>
+  <g fill="none" stroke="url(#gold)" stroke-width=".9">
+    <use href="#hh" x="204" y="26" width="20" height="20" transform="rotate(-12 214 36)"/>
+    <use href="#hh" x="107" y="355" width="20" height="20" transform="rotate(8 117 365)"/>
+  </g>
+  <g fill="url(#gold)" opacity=".9">
+    <use href="#hh" x="248" y="203" width="9" height="9"/><use href="#hh" x="257" y="226" width="12" height="12"/>
+  </g>
+  <path d="M26 146 Q34 64 140 16" fill="none" stroke="#b9945a" stroke-width=".9"/><path d="M29.3 126.8 Q35.2 137.7 41.7 148.5" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M34.3 111.6 Q33.7 104.3 40.7 97.6" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M41.2 97.0 Q49.5 107.1 50.6 111.7" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M50.0 83.1 Q59.0 73.3 61.2 69.3" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M60.8 69.9 Q71.9 69.3 75.1 67.0" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M73.6 57.4 Q83.5 57.6 87.0 52.8" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M88.3 45.5 Q96.1 52.1 98.8 57.1" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M105.0 34.4 Q109.9 41.4 121.3 54.2" fill="none" stroke="#b9945a" stroke-width=".6"/><path d="M123.7 23.9 Q135.2 25.1 142.9 20.0" fill="none" stroke="#b9945a" stroke-width=".6"/><circle cx="38.6" cy="151.5" r="2.6" fill="#fbeedd"/><circle cx="38.6" cy="151.5" r=".6" fill="#e0b861"/><circle cx="43.0" cy="151.4" r="1.3" fill="#fbeedd"/><circle cx="43.0" cy="151.4" r=".6" fill="#e0b861"/><circle cx="41.2" cy="144.9" r="1.3" fill="#fbeedd"/><circle cx="41.2" cy="144.9" r=".6" fill="#e0b861"/><circle cx="42.6" cy="147.4" r="2.6" fill="#fbeedd"/><circle cx="42.6" cy="147.4" r=".6" fill="#e0b861"/><circle cx="43.2" cy="149.6" r="1.8" fill="#fbeedd"/><circle cx="43.2" cy="149.6" r=".6" fill="#e0b861"/><circle cx="35.7" cy="139.0" r="1.3" fill="#fbeedd"/><circle cx="35.7" cy="139.0" r=".6" fill="#e0b861"/><circle cx="41.6" cy="94.5" r="1.8" fill="#fbeedd"/><circle cx="41.6" cy="94.5" r=".6" fill="#e0b861"/><circle cx="42.1" cy="97.6" r="1.3" fill="#fbeedd"/><circle cx="42.1" cy="97.6" r=".6" fill="#e0b861"/><circle cx="40.3" cy="95.4" r="1.3" fill="#fbeedd"/><circle cx="40.3" cy="95.4" r=".6" fill="#e0b861"/><circle cx="42.8" cy="95.7" r="1.8" fill="#fbeedd"/><circle cx="42.8" cy="95.7" r=".6" fill="#e0b861"/><circle cx="33.8" cy="102.4" r="1.3" fill="#fbeedd"/><circle cx="33.8" cy="102.4" r=".6" fill="#e0b861"/><circle cx="47.7" cy="115.9" r="1.3" fill="#fbeedd"/><circle cx="47.7" cy="115.9" r=".6" fill="#e0b861"/><circle cx="50.3" cy="116.5" r="2.6" fill="#fbeedd"/><circle cx="50.3" cy="116.5" r=".6" fill="#e0b861"/><circle cx="49.8" cy="112.3" r="1.8" fill="#fbeedd"/><circle cx="49.8" cy="112.3" r=".6" fill="#e0b861"/><circle cx="50.6" cy="106.2" r="1.3" fill="#fbeedd"/><circle cx="50.6" cy="106.2" r=".6" fill="#e0b861"/><circle cx="57.2" cy="64.9" r="2.6" fill="#fbeedd"/><circle cx="57.2" cy="64.9" r=".6" fill="#e0b861"/><circle cx="58.0" cy="69.9" r="2.6" fill="#fbeedd"/><circle cx="58.0" cy="69.9" r=".6" fill="#e0b861"/><circle cx="61.3" cy="74.2" r="1.8" fill="#fbeedd"/><circle cx="61.3" cy="74.2" r=".6" fill="#e0b861"/><circle cx="60.4" cy="68.2" r="2.6" fill="#fbeedd"/><circle cx="60.4" cy="68.2" r=".6" fill="#e0b861"/><circle cx="60.4" cy="66.5" r="2.3" fill="#fbeedd"/><circle cx="60.4" cy="66.5" r=".6" fill="#e0b861"/><circle cx="60.4" cy="75.2" r="2.3" fill="#fbeedd"/><circle cx="60.4" cy="75.2" r=".6" fill="#e0b861"/><circle cx="71.1" cy="71.9" r="1.8" fill="#fbeedd"/><circle cx="71.1" cy="71.9" r=".6" fill="#e0b861"/><circle cx="74.6" cy="62.1" r="2.3" fill="#fbeedd"/><circle cx="74.6" cy="62.1" r=".6" fill="#e0b861"/><circle cx="78.4" cy="65.8" r="1.3" fill="#fbeedd"/><circle cx="78.4" cy="65.8" r=".6" fill="#e0b861"/><circle cx="71.0" cy="67.8" r="1.8" fill="#fbeedd"/><circle cx="71.0" cy="67.8" r=".6" fill="#e0b861"/><circle cx="70.3" cy="65.7" r="2.6" fill="#fbeedd"/><circle cx="70.3" cy="65.7" r=".6" fill="#e0b861"/><circle cx="70.5" cy="69.6" r="1.8" fill="#fbeedd"/><circle cx="70.5" cy="69.6" r=".6" fill="#e0b861"/><circle cx="89.2" cy="49.3" r="1.8" fill="#fbeedd"/><circle cx="89.2" cy="49.3" r=".6" fill="#e0b861"/><circle cx="88.8" cy="51.6" r="2.6" fill="#fbeedd"/><circle cx="88.8" cy="51.6" r=".6" fill="#e0b861"/><circle cx="88.0" cy="52.0" r="1.3" fill="#fbeedd"/><circle cx="88.0" cy="52.0" r=".6" fill="#e0b861"/><circle cx="82.0" cy="57.7" r="2.3" fill="#fbeedd"/><circle cx="82.0" cy="57.7" r=".6" fill="#e0b861"/><circle cx="99.0" cy="61.4" r="1.3" fill="#fbeedd"/><circle cx="99.0" cy="61.4" r=".6" fill="#e0b861"/><circle cx="95.0" cy="56.9" r="1.3" fill="#fbeedd"/><circle cx="95.0" cy="56.9" r=".6" fill="#e0b861"/><circle cx="96.6" cy="61.3" r="1.8" fill="#fbeedd"/><circle cx="96.6" cy="61.3" r=".6" fill="#e0b861"/><circle cx="101.2" cy="52.8" r="2.6" fill="#fbeedd"/><circle cx="101.2" cy="52.8" r=".6" fill="#e0b861"/><circle cx="95.9" cy="50.4" r="1.8" fill="#fbeedd"/><circle cx="95.9" cy="50.4" r=".6" fill="#e0b861"/><circle cx="126.1" cy="55.7" r="1.8" fill="#fbeedd"/><circle cx="126.1" cy="55.7" r=".6" fill="#e0b861"/><circle cx="122.2" cy="58.4" r="2.6" fill="#fbeedd"/><circle cx="122.2" cy="58.4" r=".6" fill="#e0b861"/><circle cx="125.4" cy="56.2" r="1.3" fill="#fbeedd"/><circle cx="125.4" cy="56.2" r=".6" fill="#e0b861"/><circle cx="116.5" cy="55.5" r="2.6" fill="#fbeedd"/><circle cx="116.5" cy="55.5" r=".6" fill="#e0b861"/><circle cx="108.2" cy="40.6" r="1.8" fill="#fbeedd"/><circle cx="108.2" cy="40.6" r=".6" fill="#e0b861"/><circle cx="145.3" cy="16.3" r="2.3" fill="#fbeedd"/><circle cx="145.3" cy="16.3" r=".6" fill="#e0b861"/><circle cx="141.4" cy="21.8" r="1.3" fill="#fbeedd"/><circle cx="141.4" cy="21.8" r=".6" fill="#e0b861"/><circle cx="146.6" cy="19.2" r="1.3" fill="#fbeedd"/><circle cx="146.6" cy="19.2" r=".6" fill="#e0b861"/><circle cx="146.6" cy="20.7" r="2.6" fill="#fbeedd"/><circle cx="146.6" cy="20.7" r=".6" fill="#e0b861"/><circle cx="141.7" cy="15.1" r="1.3" fill="#fbeedd"/><circle cx="141.7" cy="15.1" r=".6" fill="#e0b861"/><circle cx="133.5" cy="25.7" r="2.3" fill="#fbeedd"/><circle cx="133.5" cy="25.7" r=".6" fill="#e0b861"/><circle cx="143.8" cy="19.3" r="2.6" fill="#fbeedd"/><circle cx="143.8" cy="19.3" r=".6" fill="#e0b861"/><circle cx="144.3" cy="18.9" r="2.6" fill="#fbeedd"/><circle cx="144.3" cy="18.9" r=".6" fill="#e0b861"/><circle cx="139.4" cy="20.4" r="1.3" fill="#fbeedd"/><circle cx="139.4" cy="20.4" r=".6" fill="#e0b861"/><circle cx="140.2" cy="17.1" r="2.3" fill="#fbeedd"/><circle cx="140.2" cy="17.1" r=".6" fill="#e0b861"/><circle cx="141.0" cy="16.8" r="1.8" fill="#fbeedd"/><circle cx="141.0" cy="16.8" r=".6" fill="#e0b861"/>
+  <path d="M301.2 275.0 L298.7 278.8 L295.9 281.7 L293.5 282.1 L292.0 285.5 L290.2 287.4 L288.4 290.2 L284.3 292.4 L281.9 295.4 L281.0 298.1 L276.9 299.1 L274.4 303.4 L271.8 303.8 L269.5 308.2 L266.0 308.5 L265.7 312.9 L260.7 314.5 L259.9 317.9 L255.6 319.5 L253.4 322.5 L250.8 324.8 L246.4 327.8 L243.1 329.8 L241.0 331.4 L236.9 334.9 L234.1 337.4 L230.4 338.8 L227.9 341.5 L224.5 345.5 L221.5 346.3 L215.6 349.9 L213.4 352.1 L208.2 354.2 L206.4 357.0 L202.3 360.9 L198.0 361.6 L193.3 366.1 L190.2 369.2 L186.1 372.0 L181.1 374.2 L178.4 375.2 L173.5 379.6 L169.2 381.1 L164.4 385.0 L159.6 386.8 L156.8 389.3 L152.8 391.6 L152 420 L300 420Z" fill="url(#mt)"/>
+  <path d="M150 396C200 382 250 372 300 366V420H150Z" fill="#fff" opacity=".08"/>
+  <path d="M301.2 275.0 L298.7 278.8 L295.9 281.7 L293.5 282.1 L292.0 285.5 L290.2 287.4 L288.4 290.2 L284.3 292.4 L281.9 295.4 L281.0 298.1 L276.9 299.1 L274.4 303.4 L271.8 303.8 L269.5 308.2 L266.0 308.5 L265.7 312.9 L260.7 314.5 L259.9 317.9 L255.6 319.5 L253.4 322.5 L250.8 324.8 L246.4 327.8 L243.1 329.8 L241.0 331.4 L236.9 334.9 L234.1 337.4 L230.4 338.8 L227.9 341.5 L224.5 345.5 L221.5 346.3 L215.6 349.9 L213.4 352.1 L208.2 354.2 L206.4 357.0 L202.3 360.9 L198.0 361.6 L193.3 366.1 L190.2 369.2 L186.1 372.0 L181.1 374.2 L178.4 375.2 L173.5 379.6 L169.2 381.1 L164.4 385.0 L159.6 386.8 L156.8 389.3 L152.8 391.6" fill="none" stroke="#ecd08a" stroke-width=".9"/>
+  <path d="M83.6 421.2 L87.4 418.5 L93.4 416.4 L96.2 412.6 L101.4 410.1 L105.7 410.3 L111.8 406.6 L116.0 404.2 L120.2 402.6 L124.5 401.9 L129.2 401.5 L134.0 399.9 L139.4 396.6 L144.6 396.9 L150.6 395.1 L155.9 395.1 L159.9 393.5 L164.9 393.1 L170.5 391.8 L176.2 390.5 L181.1 390.8 L186.6 388.6 L191.9 390.0 L196.9 389.0 L204.1 389.2 L209.0 387.7 L213.5 388.1 L219.6 388.0 L225.7 387.2 L230.6 387.9 L237.8 387.4 L244.7 389.0 L250.9 388.4 L254.9 389.0 L263.0 390.3 L269.2 391.8 L274.2 391.3 L280.7 392.4 L288.1 394.8 L294.5 394.9 L299.1 395.8 L300 420 L84 420Z" fill="url(#mt2)"/>
+  <path d="M196 408L300 402V420H190Z" fill="#d79a9c" opacity=".75"/>
+  <path d="M83.6 421.2 L87.4 418.5 L93.4 416.4 L96.2 412.6 L101.4 410.1 L105.7 410.3 L111.8 406.6 L116.0 404.2 L120.2 402.6 L124.5 401.9 L129.2 401.5 L134.0 399.9 L139.4 396.6 L144.6 396.9 L150.6 395.1 L155.9 395.1 L159.9 393.5 L164.9 393.1 L170.5 391.8 L176.2 390.5 L181.1 390.8 L186.6 388.6 L191.9 390.0 L196.9 389.0 L204.1 389.2 L209.0 387.7 L213.5 388.1 L219.6 388.0 L225.7 387.2 L230.6 387.9 L237.8 387.4 L244.7 389.0 L250.9 388.4 L254.9 389.0 L263.0 390.3 L269.2 391.8 L274.2 391.3 L280.7 392.4 L288.1 394.8 L294.5 394.9 L299.1 395.8" fill="none" stroke="#ecd08a" stroke-width=".9"/>
+  <text x="36" y="352" font-family="'Dancing Script','Ma Shan Zheng',cursive" font-size="12" fill="#e3c27a" transform="rotate(-14 26 352)">Better</text>
+  <text x="53" y="368" font-family="'Dancing Script','Ma Shan Zheng',cursive" font-size="12" fill="#e3c27a" transform="rotate(-14 44 368)">Together</text>
+</svg>
+        <div class="label">
+          <span class="en">OUR MEMORIES</span>
+          <span class="rule"><i></i>♡<i></i></span>
+          <span class="title">属于我们的手册</span>
+          <span class="rule"><i></i>♡<i></i></span>
+        </div>
+        <div class="sheen"></div>
+        <div class="ribbon"></div>
+      </div>
+      <div class="face bk pg" data-go="prev">
+        <span class="corner tl"></span><span class="corner br"></span>
+        <h2 class="hand">写给你</h2>
+        <div class="orn"></div>
+        <p>每一个我们的瞬间<br>都值得被好好收藏。</p>
+      </div>
+    </div>
+
+    <!-- 第一页（右） / 第二页（左） -->
+    <div class="leaf" style="--i:1">
+      <div class="face fr pg" data-go="next">
+        <div class="polaroid">
+          <span class="tape"></span>
+          <div class="photo">♡<img src="Other/Romantic image.png" alt="" onerror="this.style.display='none'"></div>
+          <div class="caption">我们的第一页</div>
+        </div>
+        <p class="note">属于我们的故事<br>从这里开始……</p>
+        <span class="pno">1</span>
+      </div>
+      <div class="face bk pg" data-go="prev">
+        <h2 class="hand">我们的相遇</h2>
+        <div class="orn"></div>
+        <p>还记得第一次见面的那天吗？<br>在这里写下那一天的故事。</p>
+        <p class="date">20XX · XX · XX</p>
+        <span class="pno">2</span>
+      </div>
+    </div>
+
+    <!-- 第三页（右） / 第四页（左） -->
+    <div class="leaf" style="--i:2">
+      <div class="face fr pg" data-go="next">
+        <h2 class="hand">今年重要的日子</h2>
+        <div class="orn"></div>
+        <ul class="timeline">
+          <li tabindex="0" role="button" data-photo="Other/KLCCCouple-popup1.png" data-title="第一次见面" data-date="20XX.XX.XX" data-text="在这里写下第一次见面的故事。那天的天气、你穿的衣服、我们说的第一句话……（这段是示范文字，你可以改成自己的）">
+            <b>20XX.XX.XX</b><span>第一次见面</span>
+          </li>
+          <li tabindex="0" role="button" data-photo="Other/ParisCouple-popup2.jpg" data-title="第一次旅行" data-date="20XX.XX.XX" data-text="在这里写下第一次旅行的回忆。我们去了哪里、吃了什么、最难忘的一刻……（这段是示范文字，你可以改成自己的）">
+            <b>20XX.XX.XX</b><span>第一次旅行</span>
+          </li>
+          <li tabindex="0" role="button" data-photo="Other/Couple-popup3.jpg" data-title="在一起的日子" data-date="20XX.XX.XX" data-text="在这里写下我们在一起的那一天。那一刻的心情、想对彼此说的话……（这段是示范文字，你可以改成自己的）">
+            <b>20XX.XX.XX</b><span>在一起的日子</span>
+          </li>
+        </ul>
+        <p class="tl-hint">点一点，看看照片 ♡</p>
+        <span class="pno">3</span>
+      </div>
+      <div class="face bk pg letter" data-go="prev">
+        <h2 class="hand">想对你说</h2>
+        <p class="lines">亲爱的你，<br>谢谢你出现在我的生活里。<br>这一页留给我想说的话……<br>&nbsp;<br>永远爱你 ♡</p>
+        <span class="pno">4</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hint" id="hint">轻触书本打开</div>
+
+<!-- 时间线点击后弹出的照片 -->
+<div class="popup" id="popup" aria-hidden="true">
+  <div class="popup-card" role="dialog" aria-modal="true">
+    <button class="popup-x" id="popupX" aria-label="关闭">×</button>
+    <span class="tape"></span>
+    <div class="popup-photo">♡<img id="popupImg" alt="" onerror="this.style.display='none'"></div>
+    <h3 class="popup-title" id="popupTitle"></h3>
+    <p class="popup-date" id="popupDate"></p>
+    <p class="popup-text" id="popupText"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
